@@ -2,7 +2,10 @@
 ===========
 Kubernetes client-go SDK exercise project
 
-Refer:
+## Misc
+- kube-dump ? dump relative logs and events
+
+## Refer:
 - [kubespy](https://github.com/pulumi/kubespy)
 - [kubewatch](https://github.com/bitnami-labs/kubewatch/blob/master/pkg/utils/k8sutil.go)
 - [skaffold](https://github.com/bitnami-labs/kubewatch/blob/master/pkg/utils/k8sutil.go)
