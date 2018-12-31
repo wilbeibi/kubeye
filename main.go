@@ -1,13 +1,8 @@
 package main
 
-import (
-	"os"
+import "github.com/wilbeibi/cobra-demo/cmd"
 
-	"github.com/pkg/errors"
-	"k8s.io/client-go/kubernetes"
-	"k8s.io/client-go/tools/clientcmd"
-)
-
+/*
 // buildOutOfClusterConfig https://github.com/bitnami-labs/kubewatch/blob/master/pkg/utils/k8sutil.go
 func getOutOfClusterConfig() (kubernetes.Interface, error) {
 	kubeconfigPath := os.Getenv("KUBECONFIG")
@@ -32,7 +27,11 @@ func run() error {
 	}
 	return nil
 }
+*/
 
+func init() {
+	// log initializing
+}
 func main() {
-
+	cmd.Execute()
 }
