@@ -14,6 +14,7 @@ var podsCmd = &cobra.Command{
 	Short: "Watching Pods",
 	Run: func(cmd *cobra.Command, args []string) {
 		stopChan := make(chan struct{})
+		defer close(stopChan)
 		controller := controller.NewController()
 		controller.Run(stopChan)
 	},
